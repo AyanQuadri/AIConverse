@@ -35,7 +35,7 @@
 
 1. **Clone and navigate to project:**
 ```bash
-git clone <your-repo>
+git clone https://github.com/AyanQuadri/AIConverse.git
 cd AIConverse
 ```
 
@@ -55,31 +55,11 @@ cp .env.example .env
 uv run streamlit run src/main.py
 ```
 
-## 📁 Project Structure
-
-```
-AIConverse/
-├── src/
-│   ├── main.py                 # Main application entry point
-│   ├── components/
-│   │   ├── sidebar.py          # Navigation and history
-│   │   └── chat.py            # Chat interface
-│   ├── utils/
-│   │   ├── gemini_client.py   # AI client wrapper
-│   │   └── storage.py         # Data persistence
-│   └── pages/
-│       └── analytics.py       # Analytics dashboard
-├── data/                      # Conversation storage
-├── .env                       # Environment variables
-├── requirements.txt           # Python dependencies
-└── README.md                 # Documentation
-```
-
 ## 🎯 Usage Guide
 
 ### Getting Started
 1. Configure your Google Gemini API key in `.env`
-2. Launch the application with `streamlit run src/main.py`
+2. Launch the application with `uv run streamlit run src/main.py`
 3. Choose your conversation style from the sidebar
 4. Start chatting!
 
