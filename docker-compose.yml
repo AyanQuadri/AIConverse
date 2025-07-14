@@ -1,0 +1,14 @@
+services:
+  AIConverse:
+    image: ai:latest
+    container_name: ai_converse
+    ports:
+      - "8501:8501"
+    environment:
+      GOOGLE_API_KEY: ${GOOGLE_API_KEY}
+      APP_TITLE: ${APP_TITLE}
+      APP_DESCRIPTION: ${APP_DESCRIPTION}
+      MAX_CONVERSATIONS: ${MAX_CONVERSATIONS}
+      DEFAULT_MODEL: ${DEFAULT_MODEL}
+      DEFAULT_THEME: ${DEFAULT_THEME}
+      ENABLE_ANALYTICS: ${ENABLE_ANALYTICS}
